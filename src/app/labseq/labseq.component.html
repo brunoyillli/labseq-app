@@ -1,0 +1,15 @@
+<div class="labseq-container">
+    <h2 class="mat-h2">Labseq Calculator</h2>
+    <form class="mat-form">
+    <mat-label class="mat-form-field-label">Index</mat-label>
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <input matInput type="number" name="index" [(ngModel)]="index" class="mat-input">
+      </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" type="button" (click)="calculateLabseq()" class="mat-button">Calculate</button>
+
+    <div *ngIf="result !== undefined" class="result-container">
+      <p class="mat-h2">Result: {{ result }}</p>
+    </div>
+  </div>
+  
